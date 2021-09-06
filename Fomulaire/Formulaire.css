@@ -1,0 +1,191 @@
+body{
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+    /* overflow: hidden; */
+}
+nav{
+    width: 85vw;
+    border-radius: 2vh;
+    margin-bottom: 5%;
+    font-family: Nunito;
+    font-weight: bold;
+}
+h4{
+    color: white;
+    padding-top: 1vh;
+    display: flex;
+    justify-content: center;
+}
+img{
+    height: 6vh;
+    width: auto;
+}
+/* ---------------FORMULAIRE--------------- */
+.row{
+    margin: 0vh;
+    padding: 0vh;
+    display: flex;
+}
+ 
+  
+  input{
+    /* Pour s'assurer que tous les champs texte ont la même police.
+       Par défaut, les textarea ont une police monospace */
+    display: flex;
+    
+    font: 1em sans-serif;
+    border-radius: 2vh;
+    background-color: rgba(255, 255, 255, 0.753);
+    /* Pour que tous les champs texte aient la même dimension */
+    height: 5vh; 
+    /* box-sizing: border-box; */
+  
+    /* Pour harmoniser le look & feel des bordures des champs texte */
+    border: 1px solid rgb(153, 153, 153);  
+  }
+#pays{
+   
+    font: 1em sans-serif;
+    border-radius: 2vh;
+    background-color: rgba(255, 255, 255, 0.753);
+    height: 5vh; 
+    border: 1px solid rgb(153, 153, 153);  
+}
+  
+  label{ 
+     color: white;
+  }
+  ::placeholder{
+      padding-top: 5vh;
+  }
+  form{
+    margin-bottom: 30vh;
+  }
+  button{
+      width: 25%;
+  }
+  
+  
+  
+  /* ----------footer------------- */
+.mention{
+    display: flex;
+    text-decoration: none;
+    color:rgb(252, 247, 247);
+    position: relative;
+}
+.mention::before{
+    content: "";
+    position: absolute;
+    background: rgb(73, 128, 231);
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+.mention:hover{
+    color: rgb(73, 128, 231);
+}
+.mention:hover::before{
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+/* -------------animation-------- */
+.view{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-right: 5vh; 
+    padding-left: 0vh; 
+}
+.view li {
+    list-style: none;
+    color: rgb(48, 48, 49);
+    font-family: arial;
+    font-size: 5vh;
+    letter-spacing: 1vh;
+    font-weight: 900;
+    animation: flash 3s linear infinite;
+    
+}
+ol{
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+ol li {
+    list-style: none;
+    color: rgb(48, 48, 49);
+    font-family: arial;
+    font-size: 5vh;
+    letter-spacing: 1vh;
+    font-weight: 900;
+    animation: flashon 3s linear infinite;
+}
+@keyframes flash{
+    0%{
+        color: rgb(82, 218, 82);
+        text-shadow: none;
+    }
+    90%{
+        color: rgb(82, 218, 82);
+        text-shadow: none;
+    }
+    100%{
+        color: rgb(33, 63, 235);
+        text-shadow: 0 0 7px #f7f4f4, 0 0 50px  #051d6b;
+    }
+}
+    ul li:nth-child(1){
+        animation-delay: .1s 
+    }
+    ul li:nth-child(2){
+        animation-delay: .2s 
+    }                   
+    ul li:nth-child(3){
+        animation-delay: .3s 
+    }
+    ul li:nth-child(4){
+        animation-delay: .4s 
+    }
+    @keyframes flashon{
+        0%{
+            color: rgb(82, 218, 82);
+            text-shadow: none;
+        }
+        90%{
+            color: rgb(82, 218, 82);
+            text-shadow: none;
+        }
+        100%{
+            color: rgb(33, 63, 235);
+            text-shadow: 0 0 7px #f7f4f4, 0 0 50px  #051d6b;
+        }
+    }
+ol li:nth-child(1){  
+    animation-delay: .5s 
+}
+ol li:nth-child(2){
+    animation-delay: .6s 
+}                   
+ol li:nth-child(3){
+    animation-delay: .7s 
+}
+ol li:nth-child(4){
+    animation-delay: .8s
+}
+ol li:nth-child(5){
+    animation-delay: .9s 
+}
+@media(max-width:768px){
+    .view{
+        padding-left: 0;
+    }
+    footer .row{
+        padding: 0px;
+        margin: 0px;
+    }
+}

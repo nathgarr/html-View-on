@@ -1,0 +1,103 @@
+body{
+    background-image: url(./img/people-3131802_640.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container{
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    margin-top: 62vh;
+    margin-left: 18vw;
+    width: 8vw;
+    height: 12vh;
+}
+img:hover{
+    animation: lol 50s linear infinite;
+}
+@keyframes lol{
+    0%{
+        transform: translateX(30%);
+    }
+    4%{
+        transform: translate(100%, -8%)
+    }
+    8%{
+        transform: translate(100%, 10%);
+    }
+    12%{
+        transform: translate(130%, 10%);
+    }
+    16%{
+        transform: translate(130%, 110%);
+    }
+    20%{
+        transform: translate(170%, 110%);
+    }
+    24%{
+        transform: translate(170%, -40%);
+    }
+    28%{
+        transform:translate(140%, -40%) ;
+    }
+    32%{
+        transform: translate(140%, -100%);
+    }
+    36%{
+        transform: translate(280%, -110%);
+    }
+    40%{
+        transform: translate(280%, -200%);
+    }
+    44%{
+        transform: translate(230%, -200%);
+    }
+    48%{
+        transform: translate(230%, -160%);
+    }
+    52%{
+        transform: translate(200%, -160%);
+    }
+    56%{
+        transform: translate(200%, -250%);
+    }
+    60%{
+        transform: translate(400%, -280%);
+    }
+    64%{
+        transform: translate(420%, -100%);
+    }
+    68%{
+        transform: translate(370%, -90%);
+    }
+    71%{
+        transform: translate(370%, -30%);
+    }
+    74%{
+        transform: translate(330%, -30%);
+    }
+    77%{
+        transform: translate(330%, 20%);
+    }
+    80%{
+        transform: translate(400%, 10%);
+    }
+    83%{
+        transform: translate(410%, 60%);
+    }
+    86%{
+        transform: translate(450%, 50%);
+    }
+    89%{
+        transform: translate(450%, -40%);
+    }
+    91%{
+        transform: translate(530%, -50%) rotate(0deg);
+    }
+    92%{
+        transform:translate(530%, -50%) rotate(360deg);
+    }
+}

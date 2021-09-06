@@ -1,0 +1,210 @@
+body{
+    background-color: black;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+  width: 85vw;
+  border-radius: 2vh;
+  margin-bottom: 5%;
+  font-family: Nunito;
+  font-weight: bold;
+}
+h4{
+  color: white;
+  padding-top: 2vh;
+}
+.row{
+  margin: 0;
+  padding: 0;
+}
+img{
+    height: 6vh;
+    width: auto;
+}
+#bouton{
+  padding-top: 1vh;
+  padding-left: 40vw;
+}
+form {
+    color: seashell;
+    /* Uniquement centrer le formulaire sur la page */
+    /* Encadré pour voir les limites du formulaire */
+    /* border: 1px solid #CCC;
+    border-radius: 2vh; */
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+    display: inline-block;
+    /* width: 9vw; */
+    text-align: left;
+  }
+  input, textarea {
+    /* Pour s'assurer que tous les champs texte ont la même police.
+       Par défaut, les textarea ont une police monospace */
+     display: flex;
+    font: 1em sans-serif;
+    border-radius: 2vh;
+    background-color: rgba(255, 255, 255, 0.753);
+    /* Pour que tous les champs texte aient la même dimension */
+    height: 5vh;
+    /* box-sizing: border-box; */
+  
+    /* Pour harmoniser le look & feel des bordures des champs texte */
+    border: 1px solid rgb(153, 153, 153);
+  }
+  input:focus, textarea:focus {
+    /* Pour souligner légèrement les éléments actifs */
+    border-color: #000;
+  }
+  textarea{
+    width: 45vw;
+    height: 12vh;
+  }
+    /* #txxt{
+      width: 47vw;
+    height: 28vh;
+    transform: translate(0%, 40%);
+      
+    } */
+  p{
+      color: seashell;
+  }
+
+  ::placeholder{
+    text-align: center;
+      padding-top: 5vh;
+  }
+  textarea::placeholder{
+    text-align: center;
+  }
+  .mention{
+    text-align: center;
+    text-decoration: none;
+    color:rgb(252, 247, 247);
+    position: relative;
+}
+.mention::before{
+    content: "";
+    position: absolute;
+    background: rgb(73, 128, 231);
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+.mention:hover{
+    color: rgb(73, 128, 231);
+}
+.mention:hover::before{
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+form{
+  margin-bottom: 4vh;
+}
+#txt{
+  font-size: 15px;
+  text-align: center;
+}
+.view{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-right: 2vh;
+}
+.view li {
+  list-style: none;
+  color: rgb(48, 48, 49);
+  font-family: arial;
+  font-size: 5vh;
+  letter-spacing: 1vh;
+  font-weight: 900;
+  animation: flash 3s linear infinite;
+}
+ol{
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
+ol li {
+  list-style: none;
+  color: rgb(48, 48, 49);
+  font-family: arial;
+  font-size: 5vh;
+  letter-spacing: 1vh;
+  font-weight: 900;
+  animation: flashon 3s linear infinite;
+}
+@keyframes flash{
+  0%{
+      color: rgb(82, 218, 82);
+      text-shadow: none;
+  }
+  90%{
+      color: rgb(82, 218, 82);
+      text-shadow: none;
+  }
+  100%{
+      color: rgb(33, 63, 235);
+      text-shadow: 0 0 7px #f7f4f4, 0 0 50px  #051d6b;
+  }
+}
+  ul li:nth-child(1){
+      animation-delay: .1s 
+  }
+  ul li:nth-child(2){
+      animation-delay: .2s 
+  }                   
+  ul li:nth-child(3){
+      animation-delay: .3s 
+  }
+  ul li:nth-child(4){
+      animation-delay: .4s 
+  }
+  @keyframes flashon{
+      0%{
+          color: rgb(82, 218, 82);
+          text-shadow: none;
+      }
+      90%{
+          color: rgb(82, 218, 82);
+          text-shadow: none;
+      }
+      100%{
+          color: rgb(33, 63, 235);
+          text-shadow: 0 0 7px #f7f4f4, 0 0 50px  #051d6b;
+      }
+  }
+  ol li:nth-child(1){  
+      animation-delay: .5s 
+  }
+  ol li:nth-child(2){
+      animation-delay: .6s 
+  }                   
+  ol li:nth-child(3){
+      animation-delay: .7s 
+  }
+  ol li:nth-child(4){
+      animation-delay: .8s
+  }
+  ol li:nth-child(5){
+      animation-delay: .9s 
+  }
+  .labele{
+    text-align: center;
+  }
+@media(min-width:768px){
+  #bouton{
+    padding-top: 1vh;
+    padding-left: 70vw;
+  }
+}
