@@ -58,6 +58,7 @@ img{
   }
   ::placeholder{
       padding-top: 5vh;
+      text-align: center;
   }
   form{
     margin-bottom: 30vh;
